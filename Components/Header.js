@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "./logo.png";
 import {
   SearchIcon,
   CurrencyRupeeIcon,
@@ -10,12 +11,12 @@ import {
 const Header = () => {
   return (
     <header
-      className="sticky top-0 z-100 grid grid-cols-3 bg-white shadow-md p-3
+      className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-3
     md:px-10"
     >
-      <div className="relative flex items-center h-10 cursor-pointer my-auto md:shadow-sm">
+      <div className="relative flex items-center h-10 cursor-pointer my-auto ">
         <Image
-          src="https://links.papareact.com/qd3"
+          src={logo}
           layout="fill"
           objectFit="contain" //unnecessary aspect ratio removed
           objectPosition="left"
@@ -29,7 +30,7 @@ const Header = () => {
           placeholder="Explore more"
         />
         <SearchIcon
-          className="hidden md:inline-block h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2
+          className="hidden md:inline-block h-8 bg-purple-400  text-white rounded-full p-2 cursor-pointer md:mx-2
         "
         />
       </div>
