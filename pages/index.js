@@ -54,8 +54,9 @@ export default function Home({ getData, cardDatas }) {
           buttontext="Get Inspired"
         />
 
-        <Footer />
+      
       </main>
+        <Footer />
     </div>
   );
 }
