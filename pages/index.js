@@ -49,14 +49,12 @@ export default function Home({ getData, cardDatas }) {
 
         <LargeCard
           img="https://links.papareact.com/4cj"
-          title="The Greatest of all Places"
-          description="Wishlists created by Airbnb"
+          title="The Greatest places to visit"
+          description="Wishlists created by Canny"
           buttontext="Get Inspired"
         />
-
-      
       </main>
-        <Footer />
+      <Footer />
     </div>
   );
 }
