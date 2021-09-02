@@ -11,12 +11,15 @@ import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
+import { useRouter } from "next/dist/client/router";
 
 const Header = () => {
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setstartDate] = useState(new Date());
   const [endDate, setendDate] = useState(new Date());
-  const [noofGuests, setnoofGuests] = useState("1");
+  const [noofGuests, setnoofGuests] = useState(1);
+  const router = useRouter();
+
   const selectionRange = {
     startDate,
     endDate,
@@ -38,7 +41,10 @@ const Header = () => {
       className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-3
     md:px-10"
     >
-      <div className="relative flex items-center h-10 cursor-pointer my-auto ">
+      <div
+        onClick={() => router.push("/")}
+        className="relative flex items-center h-10 cursor-pointer my-auto "
+      >
         <Image
           src={logo}
           layout="fill"

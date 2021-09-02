@@ -6,15 +6,18 @@ const search = () => {
     <div>
       <Header />
 
-      <main className="flex">
-        <section>
+      <main className="flex pl-4">
+        <section className="flex-grow pt-12 px-6">
           <p className="text-xs mt-3">We have achieved 100+ stays in 30 days</p>
-          <h1 className="text-3xl font-semibold mt-2 mb-6">
+          <h1 className="text-3xl font-bold mt-2 mb-6">
             Wonderful stays in Bhatkal
           </h1>
 
-          <div className="mb-6">
-            <p className="px-2 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 transition transform duration-100 ease-out"></p>
+          <div className="mb-6 hidden lg:inline-flex space-x-3 text-gray-800 whitespace-normal">
+            <p className="button">Payment Flexibility</p>
+            <p className="button">Vacation</p>
+            <p className="button">Hospitality </p>
+            <p className="button">More Filters</p>
           </div>
         </section>
       </main>

@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div className="space-y-4 text-xs text-gray-800">
-        <h5 className="font-semibold w-48 md:m-12 w-96 ">
+        <h5 className="font-semibold  sm md:m-12 w-62 mt-3 ">
           Terms & Conditions | All Rights Reserved | 2021 Digital Villa and co.
         </h5>
       </div>
