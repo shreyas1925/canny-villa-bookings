@@ -13,7 +13,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
 import { useRouter } from "next/dist/client/router";
 
-const Header = () => {
+const Header = ({ placeholder }) => {
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setstartDate] = useState(new Date());
   const [endDate, setendDate] = useState(new Date());
@@ -35,7 +35,17 @@ const Header = () => {
     setSearchInput("");
   };
 
-  const searchHandle = () => {};
+  const searchHandle = () => {
+    router.push({
+      pathname: "/search",
+      query: {
+        location: searchInput,
+        startDate: startDate.toISOString(),
+        endDate: endDate.toISOString(),
+        noofGuests,
+      },
+    });
+  };
   return (
     <header
       className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-3
@@ -59,12 +69,12 @@ const Header = () => {
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
           className="text-gray-600 text-sm pl-5 bg-transparent outline-none flex-grow "
-          placeholder="Explore more"
+          placeholder={placeholder || "Explore more"}
         />
         <SearchIcon className="hidden md:inline-block h-8 bg-purple-400  text-white rounded-full p-2 cursor-pointer md:mx-2" />
       </div>
 
-      <div className="flex items-center cursor-pointer space-x-2 justify-end">
+      <div className="flex items-center cursor-pointer space-x-2 justify-end opacity-60">
         <p className="font-sans hidden md:inline-block">Buy me a coffee</p>
         <CurrencyRupeeIcon className="h-6" />
 

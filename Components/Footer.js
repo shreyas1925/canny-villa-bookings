@@ -44,9 +44,9 @@ const Footer = () => {
       <div className="space-y-4 text-xs text-gray-800">
         <h5 className="font-bold mt-3 mb-4">CONTACT US</h5>
         <div className="flex justify-between sm:m-4 cursor-pointer">
-          <Link href="/">
+          <a href="https://github.com/shreyas1925" target="_blank">
             <GitHubIcon />
-          </Link>
+          </a>
           <Link href="/">
             <InstagramIcon />
           </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div className="space-y-4 text-xs text-gray-800">
-        <h5 className="font-semibold  sm md:m-12 w-62 mt-3 ">
+        <h5 className="font-semibold md:m-12 w-62 mt-3 md:w-screen">
           Terms & Conditions | All Rights Reserved | 2021 Digital Villa and co.
         </h5>
       </div>
