@@ -12,7 +12,7 @@ const search = () => {
   const rangeDates = `${formattedstartDate} - ${formattedendDate}`;
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header placeholder={`${location} | ${rangeDates} | ${noofGuests}`} />
 
       <main className="flex pl-4">

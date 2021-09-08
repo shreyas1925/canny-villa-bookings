@@ -8,7 +8,7 @@ import Footer from "../Components/Footer";
 
 export default function Home({ getData, cardDatas }) {
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Head>
         <title>Digital Private Villa</title>
         <link rel="icon" href="/favicon.ico" />
