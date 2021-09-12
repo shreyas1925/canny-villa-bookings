@@ -3,7 +3,7 @@ import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import { format } from "date-fns";
 
-const search = () => {
+const search = ({ data }) => {
   const router = useRouter();
 
   const { location, startDate, endDate, noofGuests } = router.query;
@@ -39,3 +39,16 @@ const search = () => {
 };
 
 export default search;
+
+export const getServerSideProps = async () => {
+  const searchResults = await fetch("https://links.papareact.com/isz");
+  const data = await searchResults.json();
+
+  console.log(data);
+
+  return {
+    props: {
+      data,
+    },
+  };
+};
