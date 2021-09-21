@@ -6,6 +6,8 @@
 /.pnp
 .pnp.js
 
+public/images/villa_logo.png
+
 # testing
 /coverage
 
