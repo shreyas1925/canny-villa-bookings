@@ -1,0 +1,14 @@
+.image {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../public/images/beach_banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .image {
+    height: 40vh;
+  }
+}
