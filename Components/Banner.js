@@ -17,7 +17,7 @@ const Banner = () => {
       </div>
 
       <div className="absolute top-1/2 w-full text-center">
-        <p className="text-sm sm:text-lg text-bold text-white">
+        <p className="text-sm sm:text-lg text-bold text-white md:mt-8">
           Not sure where to go ?
         </p>
         <button
