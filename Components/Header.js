@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "./logo.png";
+import logo from "../public/images/logo.png";
 import {
   SearchIcon,
   CurrencyRupeeIcon,
@@ -71,7 +71,7 @@ const Header = ({ placeholder }) => {
           className="text-gray-600 text-sm pl-5 bg-transparent outline-none flex-grow "
           placeholder={placeholder || "Explore more"}
         />
-        <SearchIcon className="hidden md:inline-block h-8 bg-purple-400  text-white rounded-full p-2 cursor-pointer md:mx-2" />
+        <SearchIcon className="hidden md:inline-block h-8 bg-blue-400  text-white rounded-full p-2 cursor-pointer md:mx-2" />
       </div>
 
       <div className="flex items-center cursor-pointer space-x-2 justify-end opacity-60">

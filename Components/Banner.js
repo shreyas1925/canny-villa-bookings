@@ -21,7 +21,7 @@ const Banner = () => {
           Not sure where to go ?
         </p>
         <button
-          className="bg-white text-purple-500 px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl
+          className="bg-white text-blue-500 px-10 py-4 shadow-md rounded-full font-bold my-3 hover:shadow-xl
         active:scale-90 transition duration-150"
         >
           Explore more

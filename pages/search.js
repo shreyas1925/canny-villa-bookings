@@ -2,6 +2,7 @@ import { useRouter } from "next/dist/client/router";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import { format } from "date-fns";
+import ValidCard from "../Components/ValidCard";
 
 const search = ({ data }) => {
   const router = useRouter();
@@ -29,6 +30,23 @@ const search = ({ data }) => {
             <p className="button">Vacation</p>
             <p className="button">Hospitality </p>
             <p className="button">More Filters</p>
+          </div>
+
+          <div className="flex flex-col">
+            {data.map(
+              ({ img, location, title, description, star, price, total }) => (
+                <ValidCard
+                  key={img}
+                  img={img}
+                  location={location}
+                  title={title}
+                  description={description}
+                  star={star}
+                  price={price}
+                  total={total}
+                />
+              )
+            )}
           </div>
         </section>
       </main>
