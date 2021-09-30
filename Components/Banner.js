@@ -16,8 +16,8 @@ const Banner = () => {
         /> */}
       </div>
 
-      <div className="absolute top-1/2 w-full text-center">
-        <p className="text-sm sm:text-lg text-bold text-white md:mt-8">
+      <div className="banner_main absolute top-1/2 w-full text-center">
+        <p className="text-sm sm:text-lg text-bold text-white sm:hidden">
           Not sure where to go ?
         </p>
         <button
